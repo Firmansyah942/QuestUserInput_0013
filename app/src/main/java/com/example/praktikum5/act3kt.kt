@@ -1,4 +1,4 @@
-package com.example.praktikum5.ui.theme
+package com.example.praktikum5
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -27,7 +27,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import com.example.praktikum5.R // Pastikan import R sesuai dengan package aplikasi Anda
 
 @Composable
 fun FormDataDiri(modifier: Modifier = Modifier){
@@ -85,7 +84,7 @@ fun FormDataDiri(modifier: Modifier = Modifier){
         OutlinedTextField(
             value = textAlamat,
             singleLine = true,
-            modifier = Modifier.width(250.dp),
+            modifier = Modifier.width(300.dp),
             label = { Text("Alamat") },
             onValueChange = {
                 textAlamat = it
