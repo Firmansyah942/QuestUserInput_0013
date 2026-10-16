@@ -84,7 +84,7 @@ fun FormDataDiri(modifier: Modifier = Modifier){
         OutlinedTextField(
             value = textAlamat,
             singleLine = true,
-            modifier = Modifier.width(300.dp),
+            modifier = Modifier.width(250.dp),
             label = { Text("Alamat") },
             onValueChange = {
                 textAlamat = it
@@ -108,7 +108,7 @@ fun FormDataDiri(modifier: Modifier = Modifier){
                 alamat = textAlamat
             }
         ){
-            Text(stringResource(R.string.submit))
+            Text(stringResource(Text("Kirim")))
         }
         HorizontalDivider(
             modifier = Modifier.padding(
